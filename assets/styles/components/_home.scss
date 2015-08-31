@@ -1,0 +1,38 @@
+.home-content {
+  background: $white;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 4rem;
+}
+
+.home-quote {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.home-content-left {
+  width: 45%;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 2rem;
+  vertical-align: top;
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.home-content-right {
+  width: 45%;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 2rem;
+  vertical-align: top;
+
+  img {
+    @include card(1);
+    border: 5px solid $white;
+    width: 100%;
+  }
+}
