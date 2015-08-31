@@ -14,6 +14,8 @@ add_theme_support('soil-nice-search');      // Enable nice search from Soil
 add_theme_support('soil-jquery-cdn');       // Enable to load jQuery from the Google CDN
 add_theme_support( 'post-thumbnails' );     // Enable thumbnail support for
                                             // for featured images
+
+set_post_thumbnail_size( 250, 150 );
 /**
  * Configuration values
  */
