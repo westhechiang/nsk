@@ -1,0 +1,88 @@
+.banner {
+  background: $white;
+  border-bottom: 1px solid #DDD;
+
+  .container {
+    padding: 10px 0;
+  }
+}
+
+.brand {
+  display: inline-block;
+  float: left;
+}
+
+
+////////////////
+// navigation //
+////////////////
+.nav {
+  height: 70px;
+  padding-top: 20px;
+  padding-left: 20px;
+  display: inline-block;
+
+  li {
+    display: inline-block;
+
+    a {
+      color: $black;
+      transition: .2s ease-in-out all;
+
+      &:hover {
+        color: gold;
+        cursor: pointer;
+        background: $white;
+      }
+    }
+  }
+}
+
+//////////////////
+// social media //
+//////////////////
+.social-media-icons {
+  list-style-type: none;
+  display: inline-block;
+  padding-top: 20px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+  li {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 5px 10px;
+    width: 40px;
+    height: 37px;
+    text-align: center;
+    margin-left: 5px;
+    transition: .2s ease-in-out all;
+
+    &:nth-child(1) {
+      background-color: $fb;
+    }
+
+    &:nth-child(2) {
+      background-color: $tw;
+    }
+
+    &:nth-child(3) {
+      background-color: $yp;
+    }
+
+    &:hover {
+      background-color: gold;
+      cursor: pointer;
+    }
+
+    a {
+      font-size: 20px;
+
+      i {
+        color: $white;
+      }
+    }
+  }
+}
+

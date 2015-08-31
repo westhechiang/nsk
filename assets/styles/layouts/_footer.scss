@@ -1,0 +1,19 @@
+footer {
+  background: #333;
+}
+
+footer > div > section.widget_text {
+  color: $white;
+
+  &:first-child {
+    float: left;
+  }
+
+  &:last-child {
+    float: right;
+  }
+}
+
+footer > .container {
+  padding: 10px;
+}
