@@ -31,10 +31,10 @@
     border-radius: 3px;
     padding-left: 3.5rem;
     transition: .5s ease-in-out background;
-    background: url("../../dist/images/bun.png") 0 100px no-repeat;
+    background: url("../../dist/images/logo-circle-small.png") 0 100px no-repeat;
 
     &:hover {
-      background: url("../../dist/images/bun.png") 0 -2px no-repeat;
+      background: url("../../dist/images/logo-circle-small.png") 0 -2px no-repeat;
     }
 
 
@@ -77,16 +77,20 @@
     margin-left: 5px;
     transition: .2s ease-in-out all;
 
-    &:nth-child(1) {
+    &.nsk-fb {
       background-color: $fb;
     }
 
-    &:nth-child(2) {
+    &.nsk-tw {
       background-color: $tw;
     }
 
-    &:nth-child(3) {
+    &.nsk-yp {
       background-color: $yp;
+    }
+
+    &.nsk-insta {
+      background-color: $insta;
     }
 
     &:hover {

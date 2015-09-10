@@ -15,11 +15,29 @@
           ]
         );
         echo "<ul class='social-media-icons'>
-             <li><a href=''><i class='fa fa-facebook'></i></a></li>
-                <li><a href=''><i class='fa fa-twitter'></i></a></li>
-                <li><a href=''><i class='fa fa-yelp'></i></a></li>
+                <li class='nsk-fb'>
+                  <a href='https://www.facebook.com/NewSchoolKitchen'>
+                    <i class='fa fa-facebook'></i>
+                  </a>
+                </li>
+                <li class='nsk-yp'>
+                  <a href='http://www.yelp.com/biz/new-school-kitchen-los-angeles'>
+                    <i class='fa fa-yelp'></i>
+                  </a>
+                </li>
+                <li class='nsk-insta'>
+                  <a href='https://instagram.com/newschoolkitchen/'>
+                    <i class='fa fa-instagram'></i>
+                  </a>
+                </li>
               </ul>";
       endif;
+                // removed since he doens't have a twitter account
+                // <li class='nsk-tw'>
+                //   <a href=''>
+                //     <i class='fa fa-twitter'></i>
+                //   </a>
+                // </li>
       ?>
     </nav>
   </div>
