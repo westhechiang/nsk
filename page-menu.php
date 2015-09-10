@@ -1,7 +1,7 @@
 <?php
   /**
    * Template Name: Menu
-   * Description: Creates a gallery of menu items
+   * Description: NSK Menu Template
    * Notes: Make sure you have support for thumbnails enabled
    */
 
