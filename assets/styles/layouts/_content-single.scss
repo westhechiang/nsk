@@ -5,4 +5,19 @@
   border-radius: 3px;
   padding: 1rem 3rem;
   background: $white;
+
+  a {
+    color: $dg;
+    text-decoration: underline;
+  }
+
+  input[type="submit"] {
+    background: $dg;
+    border: none;
+    transition: .2s ease-in-out all;
+
+    &:hover {
+      background: lighten($dg, 20%);
+    }
+  }
 }

@@ -64,10 +64,11 @@
   list-style-type: none;
   display: inline-block;
   position: absolute;
-  top: 45px;
+  top: 15px;
   right: 55px;
 
   li {
+    @include card(1);
     display: inline-block;
     border-radius: 3px;
     padding: 5px 10px;
@@ -137,6 +138,7 @@
     }
 
     &:hover {
+      @include card(0);
       background-color: gold;
       cursor: pointer;
     }
