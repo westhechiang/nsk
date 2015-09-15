@@ -3,3 +3,102 @@
   width: 80%;
   margin-left: 10%;
 }
+
+.nsk-post-content {
+  .entry-title {
+    transition: .2s ease-in-out all;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.post {
+  @include card(1);
+  background: url("../../dist/images/logo-big-transparent-20-400x400.png") 100% -50px $white no-repeat;
+  padding: 1rem 4rem 1rem 1rem;
+  height: 170px;
+  margin-top: 1rem;
+  border-radius: 3px;
+  transition: .5s ease-in-out;
+
+  &:hover {
+    @include card(3);
+    background: url("../../dist/images/logo-big-transparent-20-400x400.png") 100% -100% $white no-repeat;
+  }
+
+
+  img {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    border-radius: 3px;
+  }
+
+  .nsk-no-image {
+    width: 250px;
+    border-radius: 3px;
+    text-align: center;
+    float: left;
+    display: inline-block;
+    height: 150px;
+    background: #ccc;
+
+    p {
+      position: relative;
+      top: 45%;
+    }
+  }
+
+  .nsk-post-content {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    float: left;
+    max-width: 70%;
+    margin-left: 1rem;
+
+    header {
+      display: inline-block;
+    }
+
+    .entry-title {
+      margin: 0;
+      display: inline-block;
+      position: relative;
+      top: 0;
+
+      a {
+        color: #333;
+        font-weight: normal;
+        font-size: 30px;
+        text-decoration: none;
+      }
+    }
+
+    time,
+    .byline.author.vcard {
+      display: inline-block;
+      color: #7F7F7F;
+      font-size: 10px;
+    }
+
+
+    header {
+      position: relative;
+      top: 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  .entry-summary {
+    padding: .5rem 1rem 1rem 0;
+    color: #333;
+    text-align: left;
+    line-height: 1;
+    font-size: 16px;
+  }
+}

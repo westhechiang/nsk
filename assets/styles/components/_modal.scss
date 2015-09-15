@@ -1,0 +1,89 @@
+.nsk-modal-overlay {
+  width: 100%;
+  height: 200%;
+  display: none;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  background: transparentize($black, .1);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nsk-close-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 12.5px;
+  background: $white;
+  color: $dg;
+  position: absolute;
+  right: -10px;
+  line-height: 1.6;
+  top: -10px;
+  border: 2px solid $dg;
+  transition: .2s ease-in-out all;
+
+  &:hover {
+    color: $white;
+    background: $dg;
+    cursor: pointer;
+  }
+}
+
+.nsk-delivery-icons {
+  @include card(1);
+  position: absolute;
+  z-index: 2;
+  border-radius: 3px;
+  width: 600px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: $white;
+  padding: 2rem;
+  display: none;
+
+  ul {
+      margin-bottom: 0;
+      text-align: center;
+      padding: 0;
+
+    p {
+      position: relative;
+      top: -5px;
+    }
+
+    li {
+      @include card(1);
+      display: inline-block;
+      width: 75px;
+      height: 75px;
+      border-radius: 3px;
+      margin-left: 7px;
+      text-align: center;
+      padding: 0;
+      transition: .2s ease-in-out all;
+
+      &:hover {
+        @include card(3);
+        cursor: pointer;
+      }
+
+      &:first-child {
+        margin-left: 20px;
+      }
+
+      a {
+
+        img {
+          margin: 0 auto;
+        }
+
+      }
+    }
+  }
+}
+

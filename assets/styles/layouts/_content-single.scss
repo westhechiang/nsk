@@ -1,0 +1,8 @@
+.nsk-single-post {
+  @include card(1);
+  margin: 2rem auto;
+  width: 90%;
+  border-radius: 3px;
+  padding: 1rem 3rem;
+  background: $white;
+}

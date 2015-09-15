@@ -19,6 +19,15 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $('.nsk-delivery').on('click', function() {
+          $('.nsk-modal-overlay').show();
+          $('.nsk-delivery-icons').show();
+        });
+
+        $('.nsk-modal-overlay, .nsk-close-button').on('click', function() {
+          $('.nsk-modal-overlay').hide();
+          $('.nsk-delivery-icons').hide();
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
